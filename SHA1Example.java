@@ -2,7 +2,8 @@ import java.security.MessageDigest;
 public class SHA1Example {
     public static void main(String[] args) {
         try {
-            String message = "Hello World";            MessageDigest md = MessageDigest.getInstance("SHA-1");
+            String message = "Hello World";           
+            MessageDigest md = MessageDigest.getInstance("SHA-1");
             byte[] messageBytes = message.getBytes();
             byte[] digestBytes = md.digest(messageBytes);
             StringBuilder hexString = new StringBuilder();
